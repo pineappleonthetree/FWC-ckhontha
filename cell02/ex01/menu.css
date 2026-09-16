@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+
+}
+
+select {
+    width: 150px;
+    height: 30px;
+    border-radius: 50px;
+    padding: 0px 10px;
+}
