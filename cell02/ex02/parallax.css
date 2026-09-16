@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+img {
+    width: 100%;
+}
+.parallax1 {
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/071/379/357/small/a-stunning-sunset-creates-a-dramatic-orange-and-red-sky-over-the-calm-ocean-and-beach-photo.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: white;
+}
+
+.break-block {
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+.parallax2 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSrlxRCQhykQW2UiG8lYw8h5ADUTSus3F-kRDHdnbbLw&s=10');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: white;
+}
