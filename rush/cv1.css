@@ -1,0 +1,30 @@
+section {
+    height: 100vh;
+}
+
+#img-pie {
+    height: 100vh;
+    width: auto;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 800;
+}
+
+.text-box p {
+    margin: 2px;
+
+}
+
+.about {
+    margin-top: 100px;
+}
+
+.text-about p {
+    margin: 2px;
+}
+
+.text-about h1 {
+    margin-bottom: 50px;
+}
