@@ -1,0 +1,268 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    color: #111111;
+    line-height: 1.6;
+}
+
+/* Minimalist Fixed Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
+    padding: 1.5rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #982828;
+    letter-spacing: -0.5px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #666666;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #000000;
+}
+
+/* Hamburger for Mobile */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 22px;
+    height: 2px;
+    background-color: #111;
+    margin: 2px 0;
+}
+
+/* Hero Section Style (สไตล์ตามภาพ) */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 5% 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-text {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+    color: #111111;
+    margin-bottom: 1.5rem;
+}
+
+.hero-text .subtitle-1 {
+    font-size: 1.1rem;
+    color: #333333;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.hero-text .subtitle-2 {
+    font-size: 1rem;
+    color: #777777;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 80vh;
+    object-fit: cover;
+}
+
+/* Content Sections */
+.content-section {
+    padding: 100px 5%;
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 60vh;
+}
+
+h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin-bottom: 2rem;
+    color: #cd7070;
+}
+
+.card {
+    background-color: #fcfcfc;
+    border: 1px solid #eeeeee;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.date {
+    display: inline-block;
+    color: #888888;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.skill-card {
+    border: 1px solid #111111;
+    padding: 1.5rem;
+    border-radius: 8px;
+    font-weight: 700;
+    text-align: center;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.skill-card img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+/* Custom Contact Section */
+.contact-card {
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.contact-subtitle {
+    color: #555555;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.8rem 1.6rem;
+    background-color: #ffffff;
+    color: #111111;
+    border: 1.5px solid #111111;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.btn i {
+    font-size: 1.2rem;
+}
+
+.btn:hover {
+    background-color: #111111;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Mobile Layout */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 120px;
+    }
+
+    .hero-text {
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-image {
+        justify-content: center;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        border-bottom: 1px solid #eee;
+        flex-direction: column;
+        padding: 1.5rem 0;
+        text-align: center;
+        gap: 1.2rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}

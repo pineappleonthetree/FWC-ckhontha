@@ -16,3 +16,39 @@ h2 {
     font-size: 48px;
     margin-bottom: 40px;
 }
+
+
+.to-cv {
+    display: flex;
+    gap: 20px; 
+}
+
+.to-cv a {
+    text-decoration: none;
+}
+
+.to-cv button {
+    padding: 12px 36px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    background-color: #fef08a; 
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50px; 
+    backdrop-filter: blur(10px); 
+    cursor: pointer;
+    transition: all 0.3s ease; 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.to-cv button:hover {
+    background: #fafafa;
+    color: #1a1a1a;
+    transform: translateY(-3px); 
+    box-shadow: 0 12px 20px rgba(255, 255, 255, 0.3);
+}
+
+.to-cv button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
